@@ -3,3 +3,7 @@
     max-height: 50px;
     margin-right: 0.5rem;
 }
+
+#api-data-display-wrapper pre, #try-will-they-win-spinner {
+    margin-top: 1rem;
+}
