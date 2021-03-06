@@ -372,15 +372,14 @@
             setFormDisplay("none");
             setResultDisplay("block");
             setSpinnerDisplay("block");
-            var responseWrapper = document.getElementById("will-they-win-response")
-            responseWrapper.style.display = "block";
+            setWillTheyWinResponseDisplay("block");
             clearForm();
 
             getRequest(url)
                 .then(data => { // JSON data parsed by `data.json()` call
 
                     const slowYourRoll = async () => {
-                        // Sleep as before showing data as the API response is very fast and the spinner only flashes
+                        // Sleep before showing the data as the API response is very fast and the spinner only flashes
                         await sleep(250);
                         handleAPIResponseJSONResults(data);
                     }
