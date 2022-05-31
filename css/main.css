@@ -1,7 +1,12 @@
+.tech-logos-wrapper div.uk-flex-wrap div {    
+    margin-bottom: 1.0rem;
+    margin-right: 1.0rem;
+}
+
 .tech-logos-wrapper img {
     max-width: 100px;
     max-height: 50px;
-    margin-right: 0.5rem;
+    
 }
 
 #api-data-display-wrapper pre, #try-will-they-win-spinner {
