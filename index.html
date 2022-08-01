@@ -192,9 +192,9 @@
                         </p>
                         <div class="project-button-wrapper">
                             <p uk-margin>
-                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal" uk-toggle>Try it out</a>
+                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-flask" uk-toggle>Try it out</a>
                                 <a class="uk-button uk-button-default uk-button-small"
-                                    href="https://github.com/gregmallan/willtheywin-fast">
+                                    href="https://github.com/gregmallan/willtheywin">
                                     <span uk-icon="icon: github"></span>&nbsp;View the code</button>
                                 </a>
                             </p>
@@ -294,10 +294,10 @@
     </div>
 
 
-    <div id="try-will-they-win-modal" class="uk-flex-top" uk-modal>
+    <div id="try-will-they-win-modal-flask" class="uk-flex-top" uk-modal>
         <div
             class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-width-3-4@m uk-width-2-3@l uk-width-1-2@xl">
-            <div id="try-will-they-win-form-wrapper">
+            <div id="try-will-they-win-form-wrapper-flask">
                 <h2 class="uk-modal-title">Try Will They Win API</h2>
                 <form>
                     <!-- Prevent implicit submission of the form on Enter in text field-->
@@ -306,33 +306,33 @@
                     <div class="uk-margin">
                         <label class="uk-form-label" for="">Team Name:</label>
                         <div class="uk-form-controls">
-                            <input id="will-they-win-team-input" class="uk-input" type="text" placeholder="Canucks">
+                            <input id="will-they-win-team-input-flask" class="uk-input" type="text" placeholder="Canucks">
                         </div>
                     </div>
                 </form>
                 <div class="uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                    <button id="try-will-they-win-submit" class="uk-button uk-button-primary" type="button">Make API
+                    <button id="try-will-they-win-submit-flask" class="uk-button uk-button-primary" type="button">Make API
                         request</button>
                 </div>
             </div>
 
-            <div id="api-data-display-wrapper" class="" style="display: none;">
-                <h2 id="data-display-modal-title" class="uk-modal-title">API request</h2>
-                <div id="url-display-wrapper">Request:<br>
-                    <pre>GET: <span id=try-will-they-win-requested-url></span></pre>
+            <div id="api-data-display-wrapper-flask" class="" style="display: none;">
+                <h2 id="data-display-modal-title-flask" class="uk-modal-title">API request</h2>
+                <div id="url-display-wrapper-flask">Request:<br>
+                    <pre>GET: <span id=try-will-they-win-requested-url-flask></span></pre>
                 </div>
 
-                <div id="will-they-win-response">Response:<br>
-                    <div id="try-will-they-win-spinner" class="" style="display: none;">
+                <div id="will-they-win-response-flask">Response:<br>
+                    <div id="try-will-they-win-spinner-flask" class="" style="display: none;">
                         <span class="" uk-spinner="ratio: 1"></span>
                     </div>
-                    <div id="data-wrapper">
-                        <pre id="api-data-display" style="display: none;"></pre>
+                    <div id="data-wrapper-flask">
+                        <pre id="api-data-display-flask" style="display: none;"></pre>
                         <div class="uk-text-right">
-                            <button id="close-results" class="uk-button uk-button-default uk-modal-close"
+                            <button id="close-results-flask" class="uk-button uk-button-default uk-modal-close"
                                 type="button">Close</button>
-                            <button id="make-new-request" class="uk-button uk-button-primary" type="button">Make another
+                            <button id="make-new-request-flask" class="uk-button uk-button-primary" type="button">Make another
                                 request</button>
                         </div>
                     </div>
@@ -342,7 +342,8 @@
         </div>
     </div>
 
-    <script src="js/try-will-they-win.js"></script>
+    <!-- <script src="js/try-will-they-win-fast.js"></script> -->
+    <script src="js/try-will-they-win-flask.js"></script>
 
 </body>
 

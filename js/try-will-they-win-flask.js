@@ -1,7 +1,7 @@
-const willTheyWinURL = "https://grega.pythonanywhere.com/will-they-win/"
+const willTheyWinURL = "https://grega.pythonanywhere.com/will-they-win/";
 
 function clearForm() {
-    var teamInput = document.getElementById("will-they-win-team-input");
+    var teamInput = document.getElementById("will-they-win-team-input-flask");
     teamInput.value = null;
 }
 
@@ -11,32 +11,32 @@ function setElementDisplay(elementId, displayValue) {
 }
 
 function setFormDisplay(displayValue) {
-    setElementDisplay("try-will-they-win-form-wrapper", displayValue)
+    setElementDisplay("try-will-they-win-form-wrapper-flask", displayValue)
 }
 
 function setSpinnerDisplay(displayValue) {
-    setElementDisplay("try-will-they-win-spinner", displayValue)
+    setElementDisplay("try-will-they-win-spinner-flask", displayValue)
 }
 
 function setWillTheyWinResponseDisplay(displayValue) {
-    setElementDisplay("will-they-win-response", displayValue)
+    setElementDisplay("will-they-win-response-flask", displayValue)
 }
 
 function setResultDisplay(displayValue) {
-    setElementDisplay("api-data-display-wrapper", displayValue)
+    setElementDisplay("api-data-display-wrapper-flask", displayValue)
 }
 
 function setResponseDataDisplay(displayValue) {
-    setElementDisplay("api-data-display", displayValue)
+    setElementDisplay("api-data-display-flask", displayValue)
 }
 
 function setResponseData(jsonData) {
-    var apiDataDispaly = document.getElementById("api-data-display");
+    var apiDataDispaly = document.getElementById("api-data-display-flask");
     apiDataDispaly.innerText = JSON.stringify(jsonData);
 }
 
 function clearResponseData() {
-    var apiDataDispaly = document.getElementById("api-data-display");
+    var apiDataDispaly = document.getElementById("api-data-display-flask");
     apiDataDispaly.innerText = null;
 }
 
@@ -79,14 +79,14 @@ async function getRequest(url) {
 
 }
 
-UIkit.util.on('#try-will-they-win-submit', 'click', function (e) {
+UIkit.util.on('#try-will-they-win-submit-flask', 'click', function (e) {
     e.preventDefault();
     e.target.blur();
 
-    var teamName = document.getElementById("will-they-win-team-input").value;
-    var url = willTheyWinURL + "?" + new URLSearchParams({ team: teamName })
-    var requestedURLSpan = document.getElementById("try-will-they-win-requested-url");
-    requestedURLSpan.innerText = url
+    let teamName = document.getElementById("will-they-win-team-input-flask").value;
+    let url = willTheyWinURL + "?" + new URLSearchParams({ team: teamName });
+    let requestedURLSpan = document.getElementById("try-will-they-win-requested-url-flask");
+    requestedURLSpan.innerText = url;
 
     setFormDisplay("none");
     setResultDisplay("block");
@@ -108,20 +108,20 @@ UIkit.util.on('#try-will-they-win-submit', 'click', function (e) {
         });
 });
 
-UIkit.util.on('#make-new-request', 'click', function (e) {
+UIkit.util.on('#make-new-request-flask', 'click', function (e) {
     e.preventDefault();
     e.target.blur();
     resetWillTheyWinModal();
 });
 
-UIkit.util.on('#close-results', 'click', function (e) {
+UIkit.util.on('#close-results-flask', 'click', function (e) {
     resetWillTheyWinModal();
 });
 
-UIkit.util.on('#try-will-they-win-modal', 'beforeshow', function (e) {
+UIkit.util.on('#try-will-they-win-modal-flask', 'beforeshow', function (e) {
     resetWillTheyWinModal();
 });
 
-UIkit.util.on('#try-will-they-win-modal', 'hidden', function (e) {
+UIkit.util.on('#try-will-they-win-modal-flask', 'hidden', function (e) {
     resetWillTheyWinModal();
 });
