@@ -92,8 +92,8 @@
                                 <div><img src="/images/logos/docker.webp" alt="Docker"></div>
                                 <div><img src="/images/logos/postgres.png" alt="Postgres"></div>
                                 <div><img src="/images/logos/celery.png" alt="Celery"></div>
-                                <!-- <div><img src="/images/logos/nginx.png" alt="Nginx"></div> -->
                                 <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                <div><img class="nginx" src="/images/logos/nginx.png" alt="Nginx"></div>
                                 <!-- <li><img src="/images/logos/redis.png" alt="Redis"></div> -->
                             </div>
                         </div>
@@ -102,9 +102,7 @@
                         <div class="project-button-wrapper">
                             <p uk-margin>
                                 <a class="uk-button uk-button-default uk-button-small" href="https://weatherapi.ca/api/">Try it out (In
-                                    development)</a>
-                                <!-- <button class="uk-button uk-button-default uk-button-small" disabled>In -->
-                                    <!-- development</button> -->
+                                    dev)</a>
                                 <button class="uk-button uk-button-default uk-button-small" disabled><span
                                         uk-icon="icon: github"></span>&nbsp;Private Repo</button>
                             </p>
@@ -113,28 +111,29 @@
                 </div>
             </div>
 
-            <div id="project-will-they-win-flask" class="project-card">
+            <div id="project-will-they-win-fast" class="project-card">
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img class="" src="images/stock/skydome.jpg" alt="Skydome">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Will They Win API</h3>
+                        <h3 class="uk-card-title">Will They Win API v2</h3>
                         <div class="tech-logos-wrapper uk-margin">
                             <div class="uk-flex uk-flex-wrap">
                                 <div><img src="/images/logos/python.png" alt="Python"></div>
-                                <div><img src="/images/logos/flask.png" alt="Flask"></div>
+                                <div><img src="/images/logos/fastapi.png" alt="FasAPI"></div>
                                 <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                <div><img src="/images/logos/docker.webp" alt="Docker"></div>
+                                <div><img class="nginx" src="/images/logos/nginx.png" alt="Nginx"></div>
                             </div>
                         </div>
-                        <p>A joke API inspired by the Vancouver Canucks &ndash; responses return a variation of
-                            'no'
+                        <p>Version 2 of the Will They Win API: a joke API inspired by the Vancouver Canucks built with FastAPI.
                         </p>
                         <div class="project-button-wrapper">
                             <p uk-margin>
-                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal" uk-toggle>Try it out</a>
+                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-fastapi" uk-toggle>Try it out</a>
                                 <a class="uk-button uk-button-default uk-button-small"
-                                    href="https://github.com/gregmallan/willtheywin">
+                                    href="https://github.com/gregmallan/willtheywin-fast">
                                     <span uk-icon="icon: github"></span>&nbsp;View the code</button>
                                 </a>
                             </p>
@@ -152,7 +151,8 @@
                         <h3 class="uk-card-title">stega-saurus</h3>
                         <div class="tech-logos-wrapper uk-margin">
                             <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>  
+                                <div><img src="/images/logos/python.png" alt="Python"></div>
+                                <div><img src="/images/logos/typer.png" alt="Typer"></div>  
                                 <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
                             </div>
                         </div>
@@ -164,6 +164,36 @@
                                     href="https://pypi.org/project/stega-saurus-py/">Install from PyPi</a>
                                 <a class="uk-button uk-button-default uk-button-small"
                                     href="https://github.com/gregmallan/stega-saurus/">
+                                    <span uk-icon="icon: github"></span>&nbsp;View the code</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project-will-they-win-flask" class="project-card">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img class="" src="images/stock/skydome.jpg" alt="Skydome">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Will They Win API v1</h3>
+                        <div class="tech-logos-wrapper uk-margin">
+                            <div class="uk-flex uk-flex-wrap">
+                                <div><img src="/images/logos/python.png" alt="Python"></div>
+                                <div><img src="/images/logos/flask.png" alt="Flask"></div>
+                                <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                            </div>
+                        </div>
+                        <p>The original Will They Win API built with flask: A joke API inspired by the Vancouver Canucks &dash; responses 
+                            return a variation of 'no'
+                        </p>
+                        <div class="project-button-wrapper">
+                            <p uk-margin>
+                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-flask" uk-toggle>Try it out</a>
+                                <a class="uk-button uk-button-default uk-button-small"
+                                    href="https://github.com/gregmallan/willtheywin">
                                     <span uk-icon="icon: github"></span>&nbsp;View the code</button>
                                 </a>
                             </p>
@@ -262,46 +292,67 @@
         </div>
     </div>
 
-
-    <div id="try-will-they-win-modal" class="uk-flex-top" uk-modal>
+    <div id="try-will-they-win-modal-fastapi" class="uk-flex-top" uk-modal>
         <div
             class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-width-3-4@m uk-width-2-3@l uk-width-1-2@xl">
-            <div id="try-will-they-win-form-wrapper">
-                <h2 class="uk-modal-title">Try Will They Win API</h2>
+            <div id="try-will-they-win-form-wrapper-fastapi">
+                <h2 class="uk-modal-title">Try Will They Win API v2</h2>
                 <form>
                     <!-- Prevent implicit submission of the form on Enter in text field-->
                     <button type="submit" disabled style="display: none" aria-hidden="true"></button>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="">Team Name:</label>
+                        <label class="uk-form-label" for="">Sport:</label>
                         <div class="uk-form-controls">
-                            <input id="will-they-win-team-input" class="uk-input" type="text" placeholder="Canucks">
+                            <select id="will-they-win-sport-select-fastapi" class="uk-select"></select>
+                            
+                            <!-- <input id="will-they-win-team-input-fastapi" class="uk-input" type="text" placeholder="Canucks"> -->
                         </div>
                     </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="">Team:</label>
+                        <div class="uk-form-controls">
+                            <select id="will-they-win-team-select-fastapi" class="uk-select"></select>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="">Sentiment:</label>
+                        <div class="uk-form-controls">
+                            <div class="uk-form-controls uk-form-controls-text">
+                                <label class="uk-marigin-right"><input type="radio" name="sentiment" value="negative">&nbsp;Negative</label>
+                                <label class="uk-marigin-right"><input type="radio" name="sentiment" value="neutral">&nbsp;Neutral</label>
+                                <label class="uk-marigin-right"><input type="radio" name="sentiment" value="positive">&nbsp;Positive</label>
+                                <label class="uk-marigin-right"><input type="radio" name="sentiment" value="">&nbsp;Any</label>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
                 <div class="uk-text-right">
                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                    <button id="try-will-they-win-submit" class="uk-button uk-button-primary" type="button">Make API
+                    <button id="try-will-they-win-submit-fastapi" class="uk-button uk-button-primary" type="button">Make API
                         request</button>
                 </div>
             </div>
 
-            <div id="api-data-display-wrapper" class="" style="display: none;">
-                <h2 id="data-display-modal-title" class="uk-modal-title">API request</h2>
-                <div id="url-display-wrapper">Request:<br>
-                    <pre>GET: <span id=try-will-they-win-requested-url></span></pre>
+            <div id="api-data-display-wrapper-fastapi" class="" style="display: none;">
+                <h2 id="data-display-modal-title-fastapi" class="uk-modal-title">API request</h2>
+                <div id="url-display-wrapper-fastapi">Request:<br>
+                    <pre>GET: <span id=try-will-they-win-requested-url-fastapi></span></pre>
                 </div>
 
-                <div id="will-they-win-response">Response:<br>
-                    <div id="try-will-they-win-spinner" class="" style="display: none;">
+                <div id="will-they-win-response-fastapi">Response:<br>
+                    <div id="try-will-they-win-spinner-fastapi" class="" style="display: none;">
                         <span class="" uk-spinner="ratio: 1"></span>
                     </div>
-                    <div id="data-wrapper">
-                        <pre id="api-data-display" style="display: none;"></pre>
+                    <div id="data-wrapper-fastapi">
+                        <pre id="api-data-display-fastapi" style="display: none;"></pre>
                         <div class="uk-text-right">
-                            <button id="close-results" class="uk-button uk-button-default uk-modal-close"
+                            <button id="close-results-fastapi" class="uk-button uk-button-default uk-modal-close"
                                 type="button">Close</button>
-                            <button id="make-new-request" class="uk-button uk-button-primary" type="button">Make another
+                            <button id="make-new-request-fastapi" class="uk-button uk-button-primary" type="button">Make another
                                 request</button>
                         </div>
                     </div>
@@ -311,7 +362,56 @@
         </div>
     </div>
 
-    <script src="js/try-will-they-win.js"></script>
+    <div id="try-will-they-win-modal-flask" class="uk-flex-top" uk-modal>
+        <div
+            class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-width-3-4@m uk-width-2-3@l uk-width-1-2@xl">
+            <div id="try-will-they-win-form-wrapper-flask">
+                <h2 class="uk-modal-title">Try Will They Win API</h2>
+                <form>
+                    <!-- Prevent implicit submission of the form on Enter in text field-->
+                    <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="">Team Name:</label>
+                        <div class="uk-form-controls">
+                            <input id="will-they-win-team-input-flask" class="uk-input" type="text" placeholder="Canucks">
+                        </div>
+                    </div>
+                </form>
+                <div class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button id="try-will-they-win-submit-flask" class="uk-button uk-button-primary" type="button">Make API
+                        request</button>
+                </div>
+            </div>
+
+            <div id="api-data-display-wrapper-flask" class="" style="display: none;">
+                <h2 id="data-display-modal-title-flask" class="uk-modal-title">API request</h2>
+                <div id="url-display-wrapper-flask">Request:<br>
+                    <pre>GET: <span id=try-will-they-win-requested-url-flask></span></pre>
+                </div>
+
+                <div id="will-they-win-response-flask">Response:<br>
+                    <div id="try-will-they-win-spinner-flask" class="" style="display: none;">
+                        <span class="" uk-spinner="ratio: 1"></span>
+                    </div>
+                    <div id="data-wrapper-flask">
+                        <pre id="api-data-display-flask" style="display: none;"></pre>
+                        <div class="uk-text-right">
+                            <button id="close-results-flask" class="uk-button uk-button-default uk-modal-close"
+                                type="button">Close</button>
+                            <button id="make-new-request-flask" class="uk-button uk-button-primary" type="button">Make another
+                                request</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/try-will-they-win-fastapi.js"></script>
+    <script src="js/try-will-they-win-flask.js"></script>
 
 </body>
 
