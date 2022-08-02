@@ -1,66 +1,66 @@
-const willTheyWinURL = "https://grega.pythonanywhere.com/will-they-win/";
+const willTheyWinURLFlask = "https://grega.pythonanywhere.com/will-they-win/";
 
-function clearForm() {
+function clearFormFlask() {
     var teamInput = document.getElementById("will-they-win-team-input-flask");
     teamInput.value = null;
 }
 
-function setElementDisplay(elementId, displayValue) {
+function setElementDisplayFlask(elementId, displayValue) {
     var element = document.getElementById(elementId);
     element.style.display = displayValue;
 }
 
-function setFormDisplay(displayValue) {
-    setElementDisplay("try-will-they-win-form-wrapper-flask", displayValue)
+function setFormDisplayFlask(displayValue) {
+    setElementDisplayFlask("try-will-they-win-form-wrapper-flask", displayValue)
 }
 
-function setSpinnerDisplay(displayValue) {
-    setElementDisplay("try-will-they-win-spinner-flask", displayValue)
+function setSpinnerDisplayFlask(displayValue) {
+    setElementDisplayFlask("try-will-they-win-spinner-flask", displayValue)
 }
 
-function setWillTheyWinResponseDisplay(displayValue) {
-    setElementDisplay("will-they-win-response-flask", displayValue)
+function setWillTheyWinResponseDisplayFlask(displayValue) {
+    setElementDisplayFlask("will-they-win-response-flask", displayValue)
 }
 
-function setResultDisplay(displayValue) {
-    setElementDisplay("api-data-display-wrapper-flask", displayValue)
+function setResultDisplayFlask(displayValue) {
+    setElementDisplayFlask("api-data-display-wrapper-flask", displayValue)
 }
 
-function setResponseDataDisplay(displayValue) {
-    setElementDisplay("api-data-display-flask", displayValue)
+function setResponseDataDisplayFlask(displayValue) {
+    setElementDisplayFlask("api-data-display-flask", displayValue)
 }
 
-function setResponseData(jsonData) {
+function setResponseDataFlask(jsonData) {
     var apiDataDispaly = document.getElementById("api-data-display-flask");
     apiDataDispaly.innerText = JSON.stringify(jsonData);
 }
 
-function clearResponseData() {
+function clearResponseDataFlask() {
     var apiDataDispaly = document.getElementById("api-data-display-flask");
     apiDataDispaly.innerText = null;
 }
 
-function resetWillTheyWinModal() {
-    setFormDisplay("block");
-    setSpinnerDisplay("none");
-    setResultDisplay("none");
-    setResponseDataDisplay("none");
-    clearResponseData();
+function resetWillTheyWinModalFlask() {
+    setFormDisplayFlask("block");
+    setSpinnerDisplayFlask("none");
+    setResultDisplayFlask("none");
+    setResponseDataDisplayFlask("none");
+    clearResponseDataFlask();
 }
 
-function handleAPIResponseJSONResults(jsonData) {
-    setSpinnerDisplay("none");
-    setResponseData(jsonData);
-    setResponseDataDisplay("block");
-    setResultDisplay("block");
+function handleAPIResponseJSONResultsFlask(jsonData) {
+    setSpinnerDisplayFlask("none");
+    setResponseDataFlask(jsonData);
+    setResponseDataDisplayFlask("block");
+    setResultDisplayFlask("block");
 }
 
-const sleep = (milliseconds) => {
+const sleepFlask = (milliseconds) => {
     console.log("sleepy time...")
     return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
-async function getRequest(url) {
+async function getRequestFlask(url) {
 
     const response = await fetch(url, {
         method: 'GET',
@@ -84,26 +84,26 @@ UIkit.util.on('#try-will-they-win-submit-flask', 'click', function (e) {
     e.target.blur();
 
     let teamName = document.getElementById("will-they-win-team-input-flask").value;
-    let url = willTheyWinURL + "?" + new URLSearchParams({ team: teamName });
+    let url = willTheyWinURLFlask + "?" + new URLSearchParams({ team: teamName });
     let requestedURLSpan = document.getElementById("try-will-they-win-requested-url-flask");
     requestedURLSpan.innerText = url;
 
-    setFormDisplay("none");
-    setResultDisplay("block");
-    setSpinnerDisplay("block");
-    setWillTheyWinResponseDisplay("block");
-    clearForm();
+    setFormDisplayFlask("none");
+    setResultDisplayFlask("block");
+    setSpinnerDisplayFlask("block");
+    setWillTheyWinResponseDisplayFlask("block");
+    clearFormFlask();
 
-    getRequest(url)
+    getRequestFlask(url)
         .then(data => { // JSON data parsed by `data.json()` call
 
-            const slowYourRoll = async () => {
+            const slowYourRollFlask = async () => {
                 // Sleep before showing the data as the API response is very fast and the spinner only flashes
-                await sleep(250);
-                handleAPIResponseJSONResults(data);
+                await sleepFlask(250);
+                handleAPIResponseJSONResultsFlask(data);
             }
 
-            slowYourRoll()
+            slowYourRollFlask();
 
         });
 });
@@ -111,17 +111,17 @@ UIkit.util.on('#try-will-they-win-submit-flask', 'click', function (e) {
 UIkit.util.on('#make-new-request-flask', 'click', function (e) {
     e.preventDefault();
     e.target.blur();
-    resetWillTheyWinModal();
+    resetWillTheyWinModalFlask();
 });
 
 UIkit.util.on('#close-results-flask', 'click', function (e) {
-    resetWillTheyWinModal();
+    resetWillTheyWinModalFlask();
 });
 
 UIkit.util.on('#try-will-they-win-modal-flask', 'beforeshow', function (e) {
-    resetWillTheyWinModal();
+    resetWillTheyWinModalFlask();
 });
 
 UIkit.util.on('#try-will-they-win-modal-flask', 'hidden', function (e) {
-    resetWillTheyWinModal();
+    resetWillTheyWinModalFlask();
 });
