@@ -80,7 +80,7 @@ async function getRequestFastAPI(url) {
 
 
 async function getSportsTeams() {
-    const url = `${willTheyWinURLFast}sports/`;
+    const url = `${willTheyWinURLFast}sports`;
     console.log(url);
     sports = await getRequestFastAPI(url);
     return sports;
