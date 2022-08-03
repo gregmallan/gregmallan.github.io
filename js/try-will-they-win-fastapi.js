@@ -1,5 +1,5 @@
 // const willTheyWinURLFast = "http://127.0.0.1:8000/"
-const willTheyWinURLFast = "http://willtheywin.ca/"
+const willTheyWinURLFast = "https://willtheywin.ca/"
 
 let sports;
 
