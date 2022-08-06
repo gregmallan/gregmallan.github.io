@@ -30,9 +30,11 @@
     #name h1 {
         letter-spacing: 0.5rem;
         font-size: 3rem;
+        text-align: center;
     }
     #blurb h1 {
         letter-spacing: 0.1rem;
         font-size: 1.25rem;
+        text-align: center;
     }
 }
