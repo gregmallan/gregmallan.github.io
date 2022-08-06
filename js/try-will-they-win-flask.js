@@ -2,7 +2,7 @@ const willTheyWinURLFlask = "https://grega.pythonanywhere.com/will-they-win/";
 
 function clearFormFlask() {
     var teamInput = document.getElementById("will-they-win-team-input-flask");
-    teamInput.value = null;
+    // teamInput.value = null;
 }
 
 function setElementDisplayFlask(elementId, displayValue) {
