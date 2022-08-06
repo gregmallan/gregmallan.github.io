@@ -1,9 +1,9 @@
-#name{
-    letter-spacing: 0.5rem;
+#name h1 {
+    letter-spacing: 0.75rem;
 }
 
-#blurb{
-    letter-spacing: 0.2rem;
+#blurb h1 {
+    letter-spacing: 0.25rem;
 }
 
 .tech-logos-wrapper div.uk-flex-wrap div {    
@@ -24,4 +24,15 @@
 
 #api-data-display-wrapper pre, #try-will-they-win-spinner {
     margin-top: 1rem;
+}
+
+@media (max-width: 400px) {
+    #name h1 {
+        letter-spacing: 0.5rem;
+        font-size: 3rem;
+    }
+    #blurb h1 {
+        letter-spacing: 0.1rem;
+        font-size: 1.25rem;
+    }
 }
