@@ -1,3 +1,11 @@
+#name{
+    letter-spacing: 0.5rem;
+}
+
+#blurb{
+    letter-spacing: 0.2rem;
+}
+
 .tech-logos-wrapper div.uk-flex-wrap div {    
     margin-bottom: 1.0rem;
     margin-right: 1.0rem;
