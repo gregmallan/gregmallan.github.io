@@ -24,7 +24,7 @@
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li class="uk-active">
-                                <a href="">Projects</a>
+                                <a href="#projects">Projects</a>
                             </li>
                             <!-- <li class="">
                                 <a href="#">Experience</a>
@@ -51,7 +51,7 @@
             <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-primary uk-nav-center">
                     <li class="uk-active">
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <!-- <li class="">
                         <a href="#">Experience</a>
@@ -71,226 +71,242 @@
     </header>
 
     <div class="uk-container uk-container-large  uk-margin-large-bottom">
-        <div class="uk-margin-medium-top uk-margin-medium-bottom">
-            <h1 class="uk-text-light uk-text-center">Personal Projects</h1>
-        </div>
 
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-
-            <div id="project-weather-api" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="/images/stock/lightning.jpg" alt="lightning">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">WeatherAPI</h3>
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>
-                                <div><img src="/images/logos/django.png" alt="Django"></div>
-                                <div><img src="/images/logos/drf.png" alt="Django Rest Framework"></div>
-                                <div><img src="/images/logos/docker.webp" alt="Docker"></div>
-                                <div><img src="/images/logos/postgres.png" alt="Postgres"></div>
-                                <div><img src="/images/logos/celery.png" alt="Celery"></div>
-                                <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
-                                <div><img class="nginx" src="/images/logos/nginx.png" alt="Nginx"></div>
-                                <!-- <li><img src="/images/logos/redis.png" alt="Redis"></div> -->
-                            </div>
-                        </div>
-                        <p>A weather API built with Django Rest Framework serving data from Environment Canada
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <a class="uk-button uk-button-default uk-button-small" href="https://weatherapi.ca/api/">Try it out (In
-                                    dev)</a>
-                                <button class="uk-button uk-button-default uk-button-small" disabled><span
-                                        uk-icon="icon: github"></span>&nbsp;Private Repo</button>
-                            </p>
-                        </div>
-                    </div>
+        <div id="header" class="">
+            <div uk-grid class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
+                <div id="name" class="uk-width-auto@m uk-margin-large-right@m">
+                    <h1 class="uk-text-light uk-text-Left uk-heading-large">Greg Allan</h1>
+                </div>
+                <div id="blurb" class="uk-width-expand@m uk-text-lead ">
+                    <h1>A passionate developer focusing on the backend with experience in the frontend and Android development.</h1>
                 </div>
             </div>
-
-            <div id="project-will-they-win-fast" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="images/stock/skydome.jpg" alt="Skydome">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Will They Win API v2</h3>
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>
-                                <div><img src="/images/logos/fastapi.png" alt="FasAPI"></div>
-                                <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
-                                <div><img src="/images/logos/docker.webp" alt="Docker"></div>
-                                <div><img class="nginx" src="/images/logos/nginx.png" alt="Nginx"></div>
-                            </div>
-                        </div>
-                        <p>Version 2 of the Will They Win API: a joke API inspired by the Vancouver Canucks built with FastAPI.
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-fastapi" uk-toggle>Try it out</a>
-                                <a class="uk-button uk-button-default uk-button-small"
-                                    href="https://github.com/gregmallan/willtheywin-fast">
-                                    <span uk-icon="icon: github"></span>&nbsp;View the code</button>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project-stega-saurus" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="images/stock/light-water-tunnle.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">stega-saurus</h3>
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>
-                                <div><img src="/images/logos/typer.png" alt="Typer"></div>  
-                                <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
-                            </div>
-                        </div>
-                        <p>A python CLI package to perform steganography, hiding data in other data
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <a class="uk-button uk-button-default uk-button-small" 
-                                    href="https://pypi.org/project/stega-saurus-py/">Install from PyPi</a>
-                                <a class="uk-button uk-button-default uk-button-small"
-                                    href="https://github.com/gregmallan/stega-saurus/">
-                                    <span uk-icon="icon: github"></span>&nbsp;View the code</button>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project-will-they-win-flask" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="images/stock/skydome.jpg" alt="Skydome">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Will They Win API v1</h3>
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>
-                                <div><img src="/images/logos/flask.png" alt="Flask"></div>
-                                <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
-                            </div>
-                        </div>
-                        <p>The original Will They Win API built with flask: A joke API inspired by the Vancouver Canucks &dash; responses 
-                            return a variation of 'no'
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-flask" uk-toggle>Try it out</a>
-                                <a class="uk-button uk-button-default uk-button-small"
-                                    href="https://github.com/gregmallan/willtheywin">
-                                    <span uk-icon="icon: github"></span>&nbsp;View the code</button>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project-photoscout" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="/images/stock/man-in-forset.jpg" alt="lightning">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">PhotoScout</h3>
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/android.png" alt="Android"></div>
-                                <!-- <div><img src="/images/logos/firebase.png" alt="Firebase"></div> -->
-                                <div><img src="/images/logos/java.png" alt="Java"></div>
-                            </div>
-                        </div>
-                        <p>An Android app to track locations of photographic opportunities
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <!-- <a class="uk-button uk-button-default uk-button-small" href="#">Try it out</a> -->
-                                <button class="uk-button uk-button-default uk-button-small" disabled>In
-                                    development</button>
-                                <button class="uk-button uk-button-default uk-button-small" disabled><span
-                                        uk-icon="icon: github"></span>&nbsp;Private Repo</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project-bucket-list" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="/images/stock/todo-list-notebook.jpg" alt="lightning">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">BucketListr</h3>
-
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>
-                                <div><img src="/images/logos/masonite.png" alt="Masonite"></div>
-                            </div>
-                        </div>
-                        <p>A bucklist tracking web application
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <!-- <a class="uk-button uk-button-default uk-button-small" href="#">Try it out</a> -->
-                                <button class="uk-button uk-button-default uk-button-small" disabled>In
-                                    development</button>
-                                <button class="uk-button uk-button-default uk-button-small" disabled><span
-                                        uk-icon="icon: github"></span>&nbsp;Private Repo</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project-slacker" class="project-card">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="" src="images/stock/typing-2.jpg" alt="lightning">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Slacker</h3>
-                        <div class="tech-logos-wrapper uk-margin">
-                            <div class="uk-flex uk-flex-wrap">
-                                <div><img src="/images/logos/python.png" alt="Python"></div>  
-                                <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
-                            </div>
-                        </div>
-                        <p>A python package to send Slack messages through Slack Aps and the messaging API
-                        </p>
-                        <div class="project-button-wrapper">
-                            <p uk-margin>
-                                <!-- <a class="uk-button uk-button-default uk-button-small" href="#">Try it out</a> -->
-                                <button class="uk-button uk-button-default uk-button-small" disabled>In
-                                    development</button>
-                                <button class="uk-button uk-button-default uk-button-small" disabled><span
-                                        uk-icon="icon: github"></span>&nbsp;Private Repo</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             
         </div>
+
+        <div id="projects" class="section">
+            <div class="uk-margin-medium-top uk-margin-medium-bottom">
+                <h1 class="uk-text-light uk-text-center">Personal Projects</h1>
+            </div>
+    
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+    
+                <div id="project-weather-api" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="/images/stock/lightning.jpg" alt="lightning">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">WeatherAPI</h3>
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/python.png" alt="Python"></div>
+                                    <div><img src="/images/logos/django.png" alt="Django"></div>
+                                    <div><img src="/images/logos/drf.png" alt="Django Rest Framework"></div>
+                                    <div><img src="/images/logos/docker.webp" alt="Docker"></div>
+                                    <div><img src="/images/logos/postgres.png" alt="Postgres"></div>
+                                    <div><img src="/images/logos/celery.png" alt="Celery"></div>
+                                    <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                    <div><img class="nginx" src="/images/logos/nginx.png" alt="Nginx"></div>
+                                    <!-- <li><img src="/images/logos/redis.png" alt="Redis"></div> -->
+                                </div>
+                            </div>
+                            <p>A weather API built with Django Rest Framework serving data from Environment Canada
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <a class="uk-button uk-button-default uk-button-small" href="https://weatherapi.ca/api/">Try it out (In
+                                        dev)</a>
+                                    <button class="uk-button uk-button-default uk-button-small" disabled><span
+                                            uk-icon="icon: github"></span>&nbsp;Private Repo</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="project-will-they-win-fast" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="images/stock/skydome.jpg" alt="Skydome">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Will They Win API v2</h3>
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/python.png" alt="Python"></div>
+                                    <div><img src="/images/logos/fastapi.png" alt="FasAPI"></div>
+                                    <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                    <div><img src="/images/logos/docker.webp" alt="Docker"></div>
+                                    <div><img class="nginx" src="/images/logos/nginx.png" alt="Nginx"></div>
+                                </div>
+                            </div>
+                            <p>Version 2 of the Will They Win API: a joke API inspired by the Vancouver Canucks built with FastAPI.
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-fastapi" uk-toggle>Try it out</a>
+                                    <a class="uk-button uk-button-default uk-button-small"
+                                        href="https://github.com/gregmallan/willtheywin-fast">
+                                        <span uk-icon="icon: github"></span>&nbsp;View the code</button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="project-stega-saurus" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="images/stock/light-water-tunnle.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">stega-saurus</h3>
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/python.png" alt="Python"></div>
+                                    <div><img src="/images/logos/typer.png" alt="Typer"></div>  
+                                    <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                </div>
+                            </div>
+                            <p>A python CLI package to perform steganography, hiding data in other data
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <a class="uk-button uk-button-default uk-button-small" 
+                                        href="https://pypi.org/project/stega-saurus-py/">Install from PyPi</a>
+                                    <a class="uk-button uk-button-default uk-button-small"
+                                        href="https://github.com/gregmallan/stega-saurus/">
+                                        <span uk-icon="icon: github"></span>&nbsp;View the code</button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="project-will-they-win-flask" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="images/stock/skydome.jpg" alt="Skydome">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Will They Win API v1</h3>
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/python.png" alt="Python"></div>
+                                    <div><img src="/images/logos/flask.png" alt="Flask"></div>
+                                    <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                </div>
+                            </div>
+                            <p>The original Will They Win API built with flask: A joke API inspired by the Vancouver Canucks &dash; responses 
+                                return a variation of 'no'
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <a class="uk-button uk-button-default uk-button-small" href="#try-will-they-win-modal-flask" uk-toggle>Try it out</a>
+                                    <a class="uk-button uk-button-default uk-button-small"
+                                        href="https://github.com/gregmallan/willtheywin">
+                                        <span uk-icon="icon: github"></span>&nbsp;View the code</button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="project-photoscout" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="/images/stock/man-in-forset.jpg" alt="lightning">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">PhotoScout</h3>
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/android.png" alt="Android"></div>
+                                    <!-- <div><img src="/images/logos/firebase.png" alt="Firebase"></div> -->
+                                    <div><img src="/images/logos/java.png" alt="Java"></div>
+                                </div>
+                            </div>
+                            <p>An Android app to track locations of photographic opportunities
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <!-- <a class="uk-button uk-button-default uk-button-small" href="#">Try it out</a> -->
+                                    <button class="uk-button uk-button-default uk-button-small" disabled>In
+                                        development</button>
+                                    <button class="uk-button uk-button-default uk-button-small" disabled><span
+                                            uk-icon="icon: github"></span>&nbsp;Private Repo</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="project-bucket-list" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="/images/stock/todo-list-notebook.jpg" alt="lightning">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">BucketListr</h3>
+    
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/python.png" alt="Python"></div>
+                                    <div><img src="/images/logos/masonite.png" alt="Masonite"></div>
+                                </div>
+                            </div>
+                            <p>A bucklist tracking web application
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <!-- <a class="uk-button uk-button-default uk-button-small" href="#">Try it out</a> -->
+                                    <button class="uk-button uk-button-default uk-button-small" disabled>In
+                                        development</button>
+                                    <button class="uk-button uk-button-default uk-button-small" disabled><span
+                                            uk-icon="icon: github"></span>&nbsp;Private Repo</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="project-slacker" class="project-card">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img class="" src="images/stock/typing-2.jpg" alt="lightning">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Slacker</h3>
+                            <div class="tech-logos-wrapper uk-margin">
+                                <div class="uk-flex uk-flex-wrap">
+                                    <div><img src="/images/logos/python.png" alt="Python"></div>  
+                                    <div><img src="/images/logos/pytest.png" alt="Pytest"></div>
+                                </div>
+                            </div>
+                            <p>A python package to send Slack messages through Slack Aps and the messaging API
+                            </p>
+                            <div class="project-button-wrapper">
+                                <p uk-margin>
+                                    <!-- <a class="uk-button uk-button-default uk-button-small" href="#">Try it out</a> -->
+                                    <button class="uk-button uk-button-default uk-button-small" disabled>In
+                                        development</button>
+                                    <button class="uk-button uk-button-default uk-button-small" disabled><span
+                                            uk-icon="icon: github"></span>&nbsp;Private Repo</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        </div>
     </div>
+
 
     <div id="try-will-they-win-modal-fastapi" class="uk-flex-top" uk-modal>
         <div
